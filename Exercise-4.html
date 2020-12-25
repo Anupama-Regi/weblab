@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Exercise-4</title>
+<style>
+table
+{
+color:red;
+background-color:lightgray;
+width:60%;
+height:90%;
+border-collapse:collapse;
+}
+input[type=text],input[type=password],input[type=email]
+{
+width:50%;
+}
+input[type="submit"],input[type="reset"]
+{
+color:white;
+background-color:gray;
+font-weight:bold;
+cursor:pointer;
+}
+td
+{
+font-style:italic;
+font-weight:bold;
+}
+body
+{
+background-color:gray;
+}
+marquee
+{
+color:yellow;
+}
+</style>
+</head>
+<body align=center>
+<marquee onmouseover=this.stop() onmouseout=this.start()><h3>WELCOME TO FRESHER'S WORLD</h3></marquee> 
+<form>
+<table align="center" border="1">
+<tr><td colspan="2" style="vertical-align:top;text-align:center;font-weight:bold;font-style:normal;text-decoration:underline;">REGISTRATION FORM</td></tr>
+<tr align="left"><th>Name</th><td><input type=text placeholder=" Your name..."></td></tr>
+<tr align="left"><th>Age</th>
+	<td><select name="dropdown">
+	<option value="Select" selected>Select</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	</select></td></tr>
+<tr align="left"><th>Password</th><td><input type=password  placeholder=" Your password..."></td></tr>
+<tr align="left"><th>Re-Enter Password</th><td><input type=password   placeholder=" Re-enter your password..."></td></tr>
+<tr align="left"><th>Select Your Security Question</th><td>
+	<input type="radio" name="question" value="pet">What is your pet name?<br>
+	<input type="radio" name="question" value="friend">What is your best friend name?<br>
+	<input type="radio" name="question" value="color">Which is your favourite color?<br>
+	<input type="radio" name="question" value="teacher">Who is your favourite teacher?<br></td></tr>
+<tr align="left"><th>Answer Security Question</th><td><input type=text  placeholder=" Your answer for above question..."></td></tr>
+<tr align="left"><th>Email.id</th><td><input type=email   placeholder=" Your mail-id..."></td></tr>
+<tr align="left"><th>Languages Known</th><td><input type="checkbox" name="malayalam">Malayalam<br>
+<input type="checkbox" name="english">English<br>
+<input type="checkbox" name="hindi">Hindi<br>
+<input type="checkbox" name="tamil">Tamil</td></tr>
+<tr align="left">
+<th>Phone Number</th>
+<td><table> 
+<tr align="center">
+	<th>Home</th>
+	<th>Office</th></tr>
+<tr align="center">
+	<td><input type=number><br></td>
+	<td><input type=number><br></td></tr>
+</table></td></tr>
+<tr align="left"><th>Upload CV</th><td><input type="file" name=cv></td></tr>
+<tr><td colspan="2" style="vertical-align:top;text-align:center;">
+<input type="reset" value="RESET">
+<input type="submit" value="SUBMIT"></td></tr>
+</table>
+</form>
+</body>
+</html>
