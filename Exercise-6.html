@@ -1,0 +1,178 @@
+<html>
+<head><title>Exercise 6</title>
+<style>
+
+#div1
+{
+background:#FF9F6B;
+color:#B8143A;
+}
+#div2
+{
+background:#77A8BB;
+color:#B8143A;
+}
+th
+{
+font-size:120%;
+}
+</style>
+</head>
+<script type="text/javascript">
+
+function mathobj()
+{
+var n1=document.getElementById("num1").value;
+var n2=document.getElementById("num2").value;
+var n3=document.getElementById("num3").value;
+var pow1=document.getElementById("pow1").value;
+
+document.getElementById("pi").value=Math.PI;
+document.getElementById("sqrt").value=Math.sqrt(n1);
+document.getElementById("round").value=Math.round(n1);
+document.getElementById("pow").value=Math.pow(n1,pow1);
+document.getElementById("abs").value=Math.abs(n1);
+document.getElementById("ceil").value=Math.ceil(n1);
+document.getElementById("floor").value=Math.floor(n1);
+document.getElementById("sin").value=Math.sin(n1);
+document.getElementById("cos").value=Math.cos(n1);
+document.getElementById("tan").value=Math.tan(n1);
+document.getElementById("exp").value=Math.exp(n1);
+document.getElementById("random").value=Math.random();
+document.getElementById("mini").value=Math.min(n1,n2,n3);
+document.getElementById("maxi").value=Math.max(n1,n2,n3);
+
+document.getElementById("euler").value=Math.E;
+document.getElementById("sqrt2").value=Math.SQRT2;
+document.getElementById("sqrt12").value=Math.SQRT1_2;
+document.getElementById("log2").value=Math.LN2;
+document.getElementById("log10").value=Math.LN10;
+document.getElementById("base2log").value=Math.LOG2E;
+document.getElementById("base10log").value=Math.LOG10E;
+}
+
+function strobj()
+{
+var s1=document.getElementById("s1").value;
+var ss1=document.getElementById("ss1").value;
+var ss2=document.getElementById("ss2").value;
+var s2=document.getElementById("s2").value;
+var start=document.getElementById("start").value;
+var end=document.getElementById("end").value;
+var length1=document.getElementById("length1").value;
+var replaced=document.getElementById("replaced").value;
+var replacing=document.getElementById("replacing").value;
+var s3=document.getElementById("s3").value;
+var pos1=document.getElementById("pos1").value;
+
+document.getElementById("length").value=s1.length;
+document.getElementById("indexstr").value=s1.indexOf(ss1);
+document.getElementById("lastindexstr").value=s1.lastIndexOf(ss2);
+document.getElementById("valueof").value=s1.valueOf();
+document.getElementById("search").value=s1.search(s2);
+document.getElementById("match").value=s1.match(s2);
+document.getElementById("slice").value=s1.slice(start,end);
+document.getElementById("substring").value=s1.substring(start,end);
+document.getElementById("substr").value=s1.substr(start,length1);
+document.getElementById("replace").value=s1.replace(replaced,replacing);
+document.getElementById("upper").value=s1.toUpperCase();
+document.getElementById("lower").value=s1.toLowerCase();
+document.getElementById("concat").value=s1.concat(" ",s3);
+document.getElementById("trim").value=s1.trim();
+document.getElementById("split").value=s1.split(" ");
+document.getElementById("padstart").value=s1.padStart(25,".");
+document.getElementById("padend").value=s1.padEnd(25,".");
+document.getElementById("charat").value=s1.charAt(pos1);
+document.getElementById("charcodeat").value=s1.charCodeAt(pos1);
+}
+</script>
+
+<body align="center" >
+<div id="div1" style="float:left; width:50%;height:110%;">
+<h1><u>Math Object Methods</u></h1>
+<table align="center" style="color:#754600;">
+<tr><th align="left">Enter a number : </th><td><input type="text" id="num1"></td></tr>
+<tr><th align="left">Enter a power value : </th><td><input type="text" id="pow1"></td></tr>
+<tr><th align="left">Enter another two numbers for finding maximum and minimum : </th><td><input type="text" id="num2">
+<td><input type="text" id="num3"></td></tr>
+</table>
+<p>Click the button to see all Math object methods.</p>
+<input type="button" onclick="mathobj()" value="MATH">
+</div>
+
+<div id="div1" style="float:right; width:50%;height:110%">
+<h2>Result : </h2>
+<table align="center" style="color:#754600;">
+<tr><th align="left">PI value : </th><td><input type="text" id="pi" readonly></td></tr>
+<tr><th align="left">Sqrt is : </th><td><input type="text" id="sqrt" readonly></td></tr>
+<tr><th align="left">Round of value : </th><td><input type="text" id="round" readonly></td></tr>
+<tr><th align="left">Power value : </th><td><input type="text" id="pow" readonly></td></tr>
+<tr><th align="left">Absolute value : </th><td><input type="text" id="abs" readonly></td></tr>
+<tr><th align="left">Ceil value : </th><td><input type="text" id="ceil" readonly></td></tr>
+<tr><th align="left">Floor value : </th><td><input type="text" id="floor" readonly></td></tr>
+<tr><th align="left">Sin value : </th><td><input type="text" id="sin" readonly></td></tr>
+<tr><th align="left">Cos value : </th><td><input type="text" id="cos" readonly></td></tr>
+<tr><th align="left">Tan value : </th><td><input type="text" id="tan" readonly></td></tr>
+<tr><th align="left">Exponent value : </th><td><input type="text" id="exp" readonly></td></tr>
+<tr><th align="left">Random value : </th><td><input type="text" id="random" readonly></td></tr>
+<tr><th align="left">Minimum value : </th><td><input type="text" id="mini" readonly></td></tr>
+<tr><th align="left">Maximum value : </th><td><input type="text" id="maxi" readonly></td></tr>
+</table>
+
+<h3>Math Properties (CONSTANT)</h3>
+<table align="center" style="color:#754600;">
+<tr><th align="left">Euler's number : </th><td><input type="text" id="euler" readonly></td></tr>
+<tr><th align="left">Square root of 2 : </th><td><input type="text" id="sqrt2" readonly></td></tr>
+<tr><th align="left">Square root of 1/2 : </th><td><input type="text" id="sqrt12" readonly></td></tr>
+<tr><th align="left">Natural logarithm of 2 : </th><td><input type="text" id="log2" readonly></td></tr>
+<tr><th align="left">Natural logarithm of 10 : </th><td><input type="text" id="log10" readonly></td></tr>
+<tr><th align="left">Base 2 logarithm of E : </th><td><input type="text" id="base2log" readonly></td></tr>
+<tr><th align="left">Base 10 logarithm of E : </th><td><input type="text" id="base10log" readonly></td></tr>
+</table>
+</div>
+
+<div id="div2" style="float:left; width:50%;height:100%;">
+<h1><u>String Object Methods</u></h1>
+<table align="center" style="color:#002C3D;">
+<tr><th align="left">Enter a string : </th><td><input type="text" id="s1"></td></tr>
+<tr><th align="left">Enter a sub string (for finding first occurrence) : </th><td><input type="text" id="ss1"></td></tr>
+<tr><th align="left">Enter a another sub string (for finding last occurrence): </th><td><input type="text" id="ss2"></td></tr>
+<tr><th align="left">Enter a string (for searching) : </th><td><input type="text" id="s2"></td></tr>
+<tr><th align="left">Enter a starting value(for slice,substring,substr) : </th><td><input type="text" id="start"></td></tr>
+<tr><th align="left">Enter a ending value(for slice,substring) : </th><td><input type="text" id="end"></td></tr>
+<tr><th align="left">Enter a length (for substr) : </th><td><input type="text" id="length1"></td></tr>
+<tr><th align="left">Enter a string (for concat) : </th><td><input type="text" id="s3"></td></tr>
+<tr><th align="left">Enter a 2 strings (for replace) : </th><td><input type="text" id="replaced" placeholder="replacing value"><input type="text" id="replacing"  placeholder="new text"></td></tr>
+<tr><th align="left">Enter a position (for charAt,charCodeAt) : </th><td><input type="text" id="pos1"></td></tr>
+</table>
+<p>Click the button to see all String object methods.</p>
+<input type="button" onclick="strobj()" value="STRING">
+</div>
+
+<div id="div2" style="float:right; width:50%;height:100%;">
+<h2>Result : </h2>
+<table align="center" style="color:#002C3D;">
+<tr><th align="left">Length of String : </th><td><input type="text" id="length" readonly></td></tr>
+<tr><th align="left">First occurrence of a string : </th><td><input type="text" id="indexstr" readonly></td></tr>
+<tr><th align="left">Last occurrence of a string : </th><td><input type="text" id="lastindexstr" readonly></td></tr>
+<tr><th align="left">Value Of : </th><td><input type="text" id="valueof" readonly></td></tr>
+<tr><th align="left">Position of the match : </th><td><input type="text" id="search" readonly></td></tr>
+<tr><th align="left">Match : </th><td><input type="text" id="match" readonly></td></tr>
+<tr><th align="left">Slice : </th><td><input type="text" id="slice" readonly></td></tr>
+<tr><th align="left">SubString : </th><td><input type="text" id="substring" readonly></td></tr>
+<tr><th align="left">Substr : </th><td><input type="text" id="substr" readonly></td></tr>
+<tr><th align="left">Upper : </th><td><input type="text" id="upper" readonly></td></tr>
+<tr><th align="left">Lower : </th><td><input type="text" id="lower" readonly></td></tr>
+<tr><th align="left">Concat : </th><td><input type="text" id="concat" readonly></td></tr>
+<tr><th align="left">Trim : </th><td><input type="text" id="trim" readonly></td></tr>
+<tr><th align="left">Spliting by space : </th><td><input type="text" id="split" readonly></td></tr>
+<tr><th align="left">Replace : </th><td><input type="text" id="replace" readonly></td></tr>
+<tr><th align="left">Char At : </th><td><input type="text" id="charat" readonly></td></tr>
+<tr><th align="left">Char Code At : </th><td><input type="text" id="charcodeat" readonly></td></tr>
+<tr><th align="left">Pad Start : </th><td><input type="text" id="padstart" readonly></td></tr>
+<tr><th align="left">Pad End : </th><td><input type="text" id="padend" readonly></td></tr>
+</table>
+</div>
+
+</body>
+</html>
