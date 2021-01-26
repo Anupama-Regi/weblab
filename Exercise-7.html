@@ -1,0 +1,75 @@
+<html>
+<head><title>Exercise-7</title></head>
+<style>
+body
+{
+color:blue;
+background:#d9f2fc;
+}
+p
+{
+text-align:center;
+}
+input[type=button],input[type=reset]
+{
+background:blue;
+color:white;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body align="center">
+<h3>C_A_L_E_N_D_E_R</h3>
+<hr/>
+
+<script>
+function calendar()
+{
+year1=document.getElementById('year1').value;
+for(var j=0;j<12;j++)
+{
+var d="<table align=center border='2'><tr><th>SUNDAY</th><th>MONDAY</th><th>TUESDAY</th><th>WEDNESDAY</th><th>THURSDAY</th><th>FRIDAY</th><th>SATURDAY</th></tr>";
+var c=new Date(year1,j);
+var day=c.getDay();
+for(var i=0;i<day;i++)
+	{
+	d+="<td></td>";
+	}
+while(c.getMonth()==j)
+{
+	d+="<td>"+c.getDate()+"</td>";
+	if(c.getDay()%7==6)
+	{
+		d+="</tr><tr>";
+	}
+	c.setDate(c.getDate()+1);
+}
+d+="</tr></table><br><br>";
+switch(j)
+{
+case 0:document.getElementById("p2").innerHTML="JANUARY";break;
+case 1:document.getElementById("p2").innerHTML="FEBRUARY";break;
+case 2:document.getElementById("p2").innerHTML="MARCH";break;
+case 3:document.getElementById("p2").innerHTML="APRIL";break;
+case 4:document.getElementById("p2").innerHTML="MAY";break;
+case 5:document.getElementById("p2").innerHTML="JUNE";break;
+case 6:document.getElementById("p2").innerHTML="JULY";break;
+case 7:document.getElementById("p2").innerHTML="AUGUST";break;
+case 8:document.getElementById("p2").innerHTML="SEPTEMBER";break;
+case 9:document.getElementById("p2").innerHTML="OCTOBER";break;
+case 10:document.getElementById("p2").innerHTML="NOVEMBER";break;
+case 11:document.getElementById("p2").innerHTML="DECEMBER";break;
+}
+document.getElementById("p1").innerHTML+=document.getElementById("p2").innerHTML+d;
+}
+}
+</script>
+Enter a year : <input type="text" id="year1"><br><br>
+<input type="button" onclick="calendar()" value="GENERATE CALENDAR">
+<input type="reset" value="CLEAR" onclick="window.location.reload();">
+<p id="p1"></p>
+<p id="p2"></p>
+<hr/>
+</body>
+</html>
