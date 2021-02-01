@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>Exercise-8</title>
+<style>
+table
+{
+color:red;
+background-color:lightgray;
+width:60%;
+height:90%;
+border-collapse:collapse;
+}
+input[type=text],input[type=password],input[type=email]
+{
+width:50%;
+}
+input[type="submit"],input[type="reset"]
+{
+color:white;
+background-color:gray;
+font-weight:bold;
+cursor:pointer;
+}
+td
+{
+font-style:italic;
+font-weight:bold;
+}
+body
+{
+background-color:gray;
+}
+marquee
+{
+color:yellow;
+}
+</style>
+</head>
+<body align=center>
+<marquee onmouseover=this.stop() onmouseout=this.start()><h1>Form Validation</h1></marquee> 
+<form method="post" name="form1" onsubmit="return registration()">
+<table align="center" border="1">
+<tr><td colspan="2" style="vertical-align:top;text-align:center;font-weight:bold;font-style:normal;text-decoration:underline;">REGISTRATION FORM</td></tr>
+<tr align="left"><th>Name</th><td><input type=text name="n" placeholder=" Your name..."></td></tr>
+<tr align="left"><th>Gender</th><td><input type="radio" name="gender" value="Male" >Male
+<input type="radio" name="gender" value="Female">Female
+<input type="radio" name="gender" value="Others">Others</td></tr>
+<tr align="left"><th>Date of birth</th><td><input type=date name="dob"  placeholder=" Your DOB..."></td></tr>
+<tr align="left"><th>Password</th><td><input type=password name="pass" placeholder=" Your password..."><font color=red> (*must contain atleast 8 character)</font></td></tr>
+<tr align="left"><th>Re-Enter Password</th><td><input type=password name="pass1"  placeholder=" Re-enter your password..."></td></tr>
+<tr align="left"><th>Email.id</th><td><input type="text" name="email"  placeholder=" Your mail-id..."></td></tr>
+<tr align="left"><th>Phone Number</th><td><input type="number" name="phno"  placeholder=" Your Phone number..."></td></tr>
+<tr align="left"><th>Upload CV</th><td><input type="file" name="cv"></td></tr>
+<tr><td colspan="2" style="vertical-align:top;text-align:center;">
+<input type="reset" value="RESET">
+<input type="submit" value="SUBMIT"></td></tr>
+</table>
+</form>
+
+<script>
+function registration()
+{
+var n=document.forms["form1"]["n"];
+var dob=document.forms["form1"]["dob"];
+var gender=document.forms["form1"]["gender"];
+var pass=document.forms["form1"]["pass"];
+var pass1=document.forms["form1"]["pass1"];
+var email=document.forms["form1"]["email"];
+var phno=document.forms["form1"]["phno"];
+var cv=document.forms["form1"]["cv"];
+if(n.value == "")
+{
+alert("Please enter name...");
+n.focus();
+return false;
+}
+var l=/^[A-Za-z]+$/;
+if(!n.value.match(l))
+{
+alert("Please enter a valid name...");
+n.focus();
+return false;
+}
+if(gender.value == "")
+{
+alert("Please select gender...");
+gender.focus();
+return false;	
+}
+if(dob.value == "")
+{
+alert("Please enter date of birth...");
+dob.focus();
+return false;	
+}
+
+if(pass.value == "")
+{
+alert("Please enter password...");
+pass.focus();
+return false;	
+}
+if(pass1.value=="")
+{
+alert("Please re-enter password...");
+pass1.focus();
+return false;	
+}
+if(pass.value.length < 8)
+{
+alert("Password must contain atleast 8 characters...");
+pass.focus();
+return false;
+}
+if(pass.value != pass1.value)
+{
+alert("Password doesn't match,please re-enter...");
+pass.focus();
+return false;
+}
+if(email.value=="")
+{
+alert("Please enter email...");
+email.focus();
+return false;	
+}
+if(email.value.indexOf("@",0)<0)
+{
+alert("Please enter a valid email_id");
+email.focus();
+return false;
+}
+if(email.value.indexOf(".",0)<0)
+{
+alert("Please enter a valid email_id");
+email.focus();
+return false;
+}
+if(phno.value=="")
+{
+alert("Please enter phone number...");
+phno.focus();
+return false;	
+}
+var pn=/^[0-9]+$/;
+if(!phno.value.match(pn))
+{
+alert("Please enter a valid phone number...");
+phno.focus();
+return false;
+}
+if(phno.value.length != 10)
+{
+alert("Please enter 10 digit phone number...");
+phno.focus();
+return false;
+}
+if(cv.value == "")
+{
+alert("Please upload cv...");
+cv.focus();
+return false;	
+}
+}
+</script>
+
+
+</body>
+</html>
