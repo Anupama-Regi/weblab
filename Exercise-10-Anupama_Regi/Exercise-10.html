@@ -1,0 +1,45 @@
+<html>
+<head><title>Exercise-10</title>
+<style>
+body
+{
+color:blue;
+background:#d9f2fc;
+}
+img
+{
+width:40%;
+height:100%;
+}
+</style>
+</head>
+<body align="center" font-size:50px>
+<div id="div1" style="float:left; width:50%;height:100%;">
+<img id="a" src="f1.jpg"/></div>
+<div id="div2" style="float:right; width:50%;height:100%; font-size:50px;">
+<p id="b">Any number of event handlers can be added to a single element without overwriting existing event handlers.</p>
+</div>
+<script>
+document.getElementById("a").addEventListener("mouseover",fun1);
+document.getElementById("a").addEventListener("mouseout",fun2);
+function fun1()
+{
+document.getElementById("a").src="f2.jpg";
+}
+function fun2()
+{
+document.getElementById("a").src="f1.jpg";
+}
+document.getElementById("b").addEventListener("mouseover",funtext1);
+document.getElementById("b").addEventListener("mouseout",funtext2);
+function funtext1()
+{
+document.getElementById("b").innerHTML="It can be a JavaScript function which respond to the event occur.";
+}
+function funtext2()
+{
+document.getElementById("b").innerHTML="Any number of event handlers can be added to a single element without overwriting existing event handlers.";
+}
+</script>
+</body>
+</html>
