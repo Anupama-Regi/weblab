@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Exercise-22</title>
+	<title>Exercise-12</title>
 <style>
 table
 {
