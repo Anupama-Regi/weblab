@@ -1,0 +1,297 @@
+.fields {
+	background-color:black;padding: 40px 20px;color: white;margin:0px;margin-top:-40px;
+	/*background:linear-gradient(to right white 0%,lightgray 44%,white 100%);*/
+    }
+.list{
+	margin-left:0;float:right;margin-top:13px;
+}
+.fields img{
+	width:80px;height:80px;margin-left:0;float:left;margin-top:-30px;border-radius:50%;
+}
+ul{
+	list-style:none;margin:0px;padding:0;
+}
+ul li{
+	float:left;font-size:20px;color:white;line-height:45px;
+	width:150px;text-align:center;background-color:black;margin-right:0px;
+}
+ul li a{
+	text-decoration:none;color:white;display:block;
+}
+ul li a:hover{
+	background-color:white;color:black;
+}
+ul li ul li{
+	display:none;
+}
+ul li:hover ul li{
+display:block;background-color:black;color:white;
+}
+.admin{
+	width:100%;height:100%;
+}
+.student{
+	width:100%;height:100%;
+}
+body{
+	background-repeat:no-repeat;background-size:cover;
+	background-image:url("lms.jpg");font-family: constantia;
+}
+.contact{
+	box-shadow:1px 1px 10px black;
+	width:500px;background:white;padding: 20px;margin: 8% auto;margin-top:130px;
+	text-align: center;border-radius: 20px;line-height:50px;opacity:.9;
+}
+.contact h2{
+font-family:segoe script;
+color:red;
+}
+.contact_2{
+font-family:comic sans ms;
+color:blue;
+font-size:20px;
+}
+.login{
+	width:350px;height:400px;background-color:white;color:black;padding:50px ;
+	margin: 8% auto;margin-top:90px;margin-bottom:50px;text-align: center;
+	border-radius: 20px;box-sizing:border-box;opacity:.9;box-shadow:2px 2px 20px black;
+}
+.login img{
+	width:130px;height:130px;margin-top:-110px;margin-bottom:20px;border-radius:100px;
+}
+ .login h1
+{
+	color: white;padding:0;margin:0;
+	text-shadow: 1px 1px 4px black;margin-bottom:15px;
+}
+.login input{
+	width:100%;margin-bottom:10px;
+}
+.login input[type=text],.login input[type=password]
+{
+	border:none;border-bottom:1px solid gray;background:transparent;
+	outline:none;height:40px;color:black;font-size:16px;font-family: constantia;
+}
+.login input[type=submit]
+{
+	border:none;border-radius:20px;background:black;outline:none;
+	height:40px;color:white;font-size:25px;margin-top:0px;font-family: constantia;
+}
+.login input[type=submit]:hover
+{
+	cursor:pointer;background:#0A3;color:white;
+}
+.login a{
+	text-decoration:none;color:blue;
+}
+.login a:hover{
+	color:blue;background-color:lightgray;
+}
+.book_issue{
+	width:60%;height:53%;background-color:white;color:black;padding:40px ;
+	margin: 8% auto;margin-top:90px;margin-bottom:20px;text-align: center;
+	border-radius: 20px;box-sizing:border-box;opacity:.9;box-shadow:2px 2px 20px black;
+}
+ .book_issue h1,.issued h1, .add_book h1,.reg h1, .accnt h1, .view_book h1
+{
+	color: white;padding:0;margin:0;
+	text-shadow: 1px 1px 4px black;margin-bottom:15px;letter-spacing:5px;word-spacing:5px;
+}
+.book_issue th{
+	width:12%;text-align:left;color:black;text-shadow: 1px 1px 10px lightgray;
+}
+.book_issue td{
+	width:40%;text-align:center;
+}
+.book_issue table{
+	margin-left:15%;
+}
+.book_issue select,.book_issue input[type=text],[type=date]{
+	width:200px;font-size:large;
+	height:30px;border-color:gray;color:black;
+	font-family:constania;background-color:lightgray;
+}
+.book_issue input[type=submit]{
+	margin-left:10%;
+}
+.book_issue input[type=reset]{
+	margin-left:-10%;
+}
+.book_issue input[type=reset],.book_issue input[type=submit]{
+	background-color:black;
+	font-family:constania;
+	color:white;border-color:gray;
+	font-size:20px;
+	letter-spacing:5px;width:150px;
+	height:30px;
+	font-family:constania;
+}
+.book_issue input[type=reset]:hover,input[type=submit]:hover{
+	background-color:#0A3;
+	color:white;
+}
+.issued{
+	width:70%;background-color:white;color:black;padding:40px 50px;
+	margin: 8% auto;margin-top:95px;margin-bottom:20px;text-align: center;
+	border-radius: 20px;box-sizing:border-box;opacity:.9;box-shadow:2px 2px 20px black;
+}
+.issued table,.view_book table{
+	margin-left:5%;font-size:20px ;
+	border-collapse:collapse;
+	border-color:blue;
+	margin-bottom:10px;
+	line-height:30px;
+}
+.issued input[type=text],.view_book input[type=text]{
+	width:200px;font-size:large;
+	height:25px;border-color:gray;color:black;
+	font-family:constania;background-color:lightgray;
+}
+
+.issued input[type=submit],.view_book input[type=submit]{
+	background-color:black;
+	font-family:constania;
+	color:white;border-color:gray;
+	font-size:15px;
+	letter-spacing:5px;width:100px;
+	height:25px;
+	font-family:constania;
+}
+.issued input[type=submit]:hover,.view_book input[type=submit]:hover{
+	background-color:green;
+	color:white;
+}
+.issued th,td,.view_book th,td{
+	text-align:center;
+}
+.home {
+	background-repeat:no-repeat;background-size:cover;
+	background-image:url("lms_5.jpg");font-family: constantia;
+}
+.first h1{
+font-family:segoe script;
+color:white;text-shadow: 1px 1px 3px black;
+margin-top:8%;letter-spacing:5px;word-spacing:5px;
+font-size:80px;
+}
+.view_book{
+	width:80%;background-color:white;color:black;padding:40px 50px;
+	margin: 8% auto;margin-top:90px;margin-bottom:20px;text-align: center;
+	border-radius: 20px;box-sizing:border-box;opacity:.9;box-shadow:2px 2px 20px black;
+}
+.add_book{
+	width:70%;background-color:white;color:black;padding:20px 20px;
+	margin: 8% auto;margin-top:95px;margin-bottom:20px;text-align: center;
+	border-radius: 20px;box-sizing:border-box;opacity:.9;box-shadow:2px 2px 20px black;
+}
+.add_book table{
+	margin-left:20%;font-size:20px ;
+	border-collapse:collapse;
+	border-color:blue;
+	margin-bottom:10px;
+	line-height:30px;
+}
+.add_book input[type=text]{
+	width:200px;font-size:large;
+	height:25px;border-color:gray;color:black;
+	font-family:constania;background-color:lightgray;
+}
+
+.add_book input[type=submit]{
+	background-color:black;
+	font-family:constania;
+	color:white;border-color:gray;
+	font-size:15px;
+	letter-spacing:5px;width:100px;
+	height:25px;
+	font-family:constania;
+}
+.add_book input[type=submit]:hover{
+	background-color:green;
+	color:white;
+}
+.add_book th,td{
+	text-align:left;height:30px;
+}
+.add_book th, .reg th{
+	text-align:left;
+}
+.add_book td, .reg td{
+	text-align:center;
+}
+.reg{
+	width:50%;background-color:white;color:black;padding:10px 30px;
+	margin: 8% auto;margin-top:80px;margin-bottom:20px;text-align: center;
+	border-radius: 20px;box-sizing:border-box;opacity:.9;box-shadow:2px 2px 20px black;
+}
+.reg th,td{
+	text-align:left;height:40px;
+}
+.reg table{
+	margin-left:15%;font-size:20px ;
+	border-collapse:collapse;
+	border-color:blue;
+	margin-bottom:10px;
+	line-height:30px;
+}
+.reg input[type=text],.reg select,.reg input[type=password]{
+	width:200px;font-size:large;
+	height:25px;border-color:gray;color:black;
+	font-family:constania;background-color:lightgray;
+}
+
+.reg input[type=submit],.reg input[type=reset]{
+	background-color:black;
+	font-family:constania;
+	color:white;border-color:gray;
+	font-size:15px;
+	letter-spacing:5px;width:120px;
+	height:25px;
+	line-height:20px;
+	font-family:constania;
+}
+.reg input[type=submit]:hover,.reg input[type=reset]:hover{
+	background-color:green;
+	color:white;
+}
+.accnt{
+	width:50%;background-color:white;color:black;padding:10px 30px;
+	margin: 8% auto;margin-top:80px;margin-bottom:20px;text-align: center;
+	border-radius: 20px;box-sizing:border-box;opacity:.9;box-shadow:2px 2px 20px black;
+}
+.accnt th,td{
+	text-align:left;height:40px;
+}
+.accnt th{
+	width:50%;
+}
+.accnt table{
+	margin-left:17%;font-size:20px ;
+	border-collapse:collapse;
+	border-color:lightgray;
+	margin-bottom:10px;
+	line-height:30px;
+}
+.accnt input[type=text],.reg select,.reg input[type=password]{
+	width:200px;font-size:large;
+	height:25px;border-color:gray;color:black;
+	font-family:constania;background-color:lightgray;
+}
+
+.accnt input[type=submit],.reg input[type=reset]{
+	background-color:black;
+	font-family:constania;
+	color:white;border-color:gray;
+	font-size:15px;
+	letter-spacing:5px;width:120px;
+	height:25px;
+	line-height:20px;
+	font-family:constania;
+}
+.accnt input[type=submit]:hover,.reg input[type=reset]:hover{
+	background-color:green;
+	color:white;
+}
+.view table{
+	margin-left:5%;
+}
